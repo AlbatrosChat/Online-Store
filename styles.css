@@ -76,6 +76,9 @@ nav ul li a:hover {
     color: white;
     position: relative;
     overflow: hidden;
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero:before {
@@ -85,8 +88,7 @@ nav ul li a:hover {
     left: 0;
     right: 0;
     bottom: -50px;
-    background: url('hero-background.jpg') no-repeat center center/cover;
-    opacity: 0.5;
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
 
