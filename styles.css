@@ -30,13 +30,20 @@ header .logo h1 {
     margin: 0;
     font-size: 24px;
     font-family: 'Cairo', sans-serif;
+    color: #FFD700; /* لون اسم المتجر: أصفر */
+}
+
+header .logo img {
+    width: 50px; /* حجم اللوغو يمكن تعديله وفقًا للحاجة */
+    margin-right: 10px; /* إضافة مساحة بين اللوغو والنص */
+    vertical-align: middle; /* ضبط المحاذاة الرأسية */
 }
 
 nav {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #87CEEB; /* لون الشريط: أزرق سماوي */
     color: white;
     display: flex;
     justify-content: space-around;
@@ -67,6 +74,9 @@ nav ul li a {
 
 nav ul li a .fa {
     margin-bottom: 4px;
+    background: linear-gradient(45deg, #2CB729, #1AC4CF); /* لون الأيقونات: مزيج من الأخضر والأزرق */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 nav ul li a:hover {
@@ -220,30 +230,30 @@ footer p {
 }
 
 /* نموذج تسجيل الدخول */
-.login {
+.login, .register {
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
     text-align: center;
 }
 
-.login form {
+.login form, .register form {
     display: flex;
     flex-direction: column;
 }
 
-.login label {
+.login label, .register label {
     margin: 10px 0 5px;
 }
 
-.login input {
+.login input, .register input {
     padding: 10px;
     margin-bottom: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
 }
 
-.login button {
+.login button, .register button {
     background-color: #007bff;
     border: none;
     color: white;
@@ -252,7 +262,7 @@ footer p {
     border-radius: 8px;
 }
 
-.login button:hover {
+.login button:hover, .register button:hover {
     background-color: #0056b3;
 }
 
@@ -276,7 +286,8 @@ footer p {
     }
 
     nav ul {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
     }
 
     nav ul li {
@@ -302,7 +313,7 @@ footer p {
         align-self: flex-end;
     }
 
-    .login {
+    .login, .register {
         width: 100%;
         padding: 10px;
     }
@@ -320,4 +331,4 @@ footer p {
     .product-card button {
         padding: 5px 10px;
     }
-}
+        }
